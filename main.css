@@ -155,7 +155,7 @@ button {
     }
 
     .produtos > div {
-        grid-template-columns: repeat(1, 100%);
+        grid-template-columns: repeat(1, 50%);
     }
 }
 
