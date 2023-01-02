@@ -150,9 +150,12 @@ button {
     .headerLateral {
         display: block;
     }
-    .produtos > div,
     .sobreLoja {
         display: block;
+    }
+
+    .produtos > div {
+        grid-template-columns: repeat(1, 100%);
     }
 }
 
