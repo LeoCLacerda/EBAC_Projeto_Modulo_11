@@ -1,0 +1,166 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Patrick Hand SC", cursive;
+}
+
+html, body {
+    background-color: black;
+    height: 100%;
+}
+
+footer {
+    height: 5%;
+    color: white;
+    background-image: linear-gradient(black, #453c50);
+    align-items: center;
+    display: flex;
+}
+
+.bodyBorder {
+    border: 5px solid transparent;
+    border-radius: 30px;
+    height: fit-content;
+    background-color: #cbcbcb;
+    margin: 0 10px;
+    padding: 30px;
+}
+
+header {
+    background-image: linear-gradient(#453c50, black);
+    color: white;
+    height: 8%;
+    align-items: center;
+    margin-bottom: 1%;
+}
+
+header h1 {
+    font-family: "MedievalSharp", cursive;
+}
+
+header .container {
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.headerLateral {
+    display: flex;
+    align-items: center;
+}
+
+.headerLateral a {
+    margin-right: 10px;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.headerLateral a:hover {
+    text-decoration: underline;
+}
+
+.headerLateral form {
+    margin-left: 10px;
+}
+
+.headerLateral input,
+.headerLateral button {
+    padding: 4px;
+    font-size: 16px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+}
+
+button {
+    cursor: pointer;
+}
+
+.sobreLoja {
+    display: grid;
+    grid-column: 2;
+    grid-template-columns: 50% 50%;
+    margin-bottom: 10px;
+}
+
+.sobreLoja img {
+    width: 100%;
+}
+
+.sobreLoja article {
+    margin: 0 15px;
+}
+
+.sobreLoja article h2,
+.produtos h2 {
+    border-bottom: black 1px solid;
+    padding: 5px;
+    margin-bottom: 20px;
+}
+
+.produtos,
+.sobreLoja {
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.produtos > div {
+    display: grid;
+    grid-template-columns: repeat(4, 24.5%);
+    column-gap: 1%;
+    row-gap: 1%;
+    justify-content: space-around;
+}
+
+.produtos article {
+    border: 1px solid #757575;
+    justify-content: center;
+    display: block;
+    padding: 5px;
+}
+
+.produtos img {
+    height: 240px;
+    display: flex;
+    justify-content: center;
+}
+
+.produtos button {
+    width: 100%;
+    font-size: 16px;
+}
+
+.centerContent {
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (max-width: 640px) {
+    .headerLateral {
+        display: block;
+    }
+    .produtos > div,
+    .sobreLoja {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 1023px) and (min-width: 641px){
+    .sobreLoja {
+        display: block;
+    }
+    .produtos > div {
+        grid-template-columns: repeat(2, 48%);
+    }
+}
